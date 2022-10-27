@@ -1,0 +1,90 @@
+button {
+    width: 140px;
+    height: 45px;
+
+    background-color: var(--primaryColor);
+
+    border-radius: 3px;
+    border: 0px;
+
+    margin-top: 10px;
+
+    transition-duration: 1s;
+    animation: none;
+}
+
+button:hover {
+    background-color: var(--secondaryColor);
+    cursor: pointer;
+
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+button>a {
+    color: var(--white);
+    font-family: var(--fSecondaryHeader);
+    font-size: 1.2rem;
+}
+
+.bigButton {
+    font-family: var(--fsecondaryHeader);
+
+    width: 180px;
+    height: 60px;
+
+    margin-right: 20px;
+
+    animation: unset;
+}
+
+.bigButton:hover {
+    animation: shakeY;
+    animation-duration: 1s;
+    transition: 2s;
+}
+
+.secondary {
+    color: var(--black);
+    background-color: white;
+    border: 5px solid var(--primaryColor);
+}
+
+.secondary:hover {
+    background-color: var(--primaryColor);
+    border: 5px solid var(--primaryColor);
+}
+
+.secondary>a {
+    color: var(--primaryColor);
+}
+.secondary:hover >a {
+    color: white;
+}
+
+.btn-small {
+    width: 100px;
+    height: 50px;
+
+    margin: 0%;
+
+    background-color: var(--secondaryColor);
+    border-radius: 0;
+}
+input[type="text"] {
+    width: 300px;
+    height: 35px;
+
+    border: 1px solid var(--primaryColor);
+}
+
+input[type="email"] {
+    width: 300px;
+    height: 35px;
+
+    border: 1px solid var(--primaryColor);
+}
+
+input[type="email"]:focus-visible {
+    border: 3px solid var(--secondaryColor);
+}

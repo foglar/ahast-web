@@ -1,0 +1,29 @@
+h1 {
+  color: var(--black);
+  font-family: var(--fprimaryHeader);
+  font-weight: var(--fWeightHeader);
+  font-size: 3rem;
+
+  cursor: default;
+}
+
+h2 {
+  color: var(--black);
+  font-family: var(--fprimaryHeader);
+  font-weight: var(--fWeightNormal);
+  font-size: 3rem;
+}
+
+h3 {
+  color: var(--black);
+  font-family: var(--fsecondaryHeader);
+  font-weight: var(--fWeightHeader);
+  font-size: 2rem;
+}
+
+p {
+  color: var(--black);
+  font-family: var(--fparagraph);
+  font-weight: var(--fWeightNormal);
+  font-size: 1.5rem;
+}

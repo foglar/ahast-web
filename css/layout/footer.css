@@ -1,0 +1,16 @@
+footer {
+  width: 100%;
+
+  color: var(--white);
+
+  font-family: var(--fparagraph);
+
+  background-color: var(--primaryColor);
+
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+footer > span > * {
+  margin: 5px;
+}

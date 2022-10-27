@@ -1,0 +1,17 @@
+.animHeader {
+    animation: none;
+}
+
+.animHeader:hover {
+    animation: tada;
+    animation-duration: 1s;
+}
+
+.animButton-Form {
+    animation: none;
+}
+
+.animButton-Form:hover {
+    animation: wobble;
+    animation-duration: 1s;
+}
