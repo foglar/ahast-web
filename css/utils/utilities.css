@@ -5,4 +5,8 @@
 .white {
     color: white;
   }
+
+.underline-blocked {
+    text-decoration: none;
+  }
   

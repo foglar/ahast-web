@@ -49,6 +49,24 @@ main > section {
 
   z-index: 10;
 }
+.statistic-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+#statistic {
+  color: var(--black);
+  text-align: center;
+}
+
+.nav-logo {
+  align-self: flex-start;
+  justify-self: flex-start;
+}
 
 .unmargin {
   margin: 2px;
@@ -71,7 +89,7 @@ main > section {
   display: block;
 }
 .main-carousel {
-  width: 60%;
+  width: 90%;
   margin-top: 20px;
 }
 

@@ -1,11 +1,14 @@
+<!--!!!WARNING THIS ANTIVIRUS IS NOT REAL IT IS JUST SCHOOL PROJECT, AND HAVE NOTHING TO DO WITH AVAST-->
 <!DOCTYPE html>
 <html lang="en">
+  <!--TODO: Backend for forms and buttons-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>ahast - cyber security</title>
+    <title>ahast - best cyber security</title>
     <!--FAVICON-->
+    <!--TODO: Preview and google SEO-->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -44,17 +47,18 @@
   <body>
     <header>
       <nav>
+        <!--!Better position for image-->
         <img
           class="nav-logo"
           src="./media/logo/ahast-shield-nobg.png"
           width="56"
           height="58"
         />
-        <h1><a href="./">ahast</a></h1>
         <div class="nav-buttonsContainer">
           <div class="nav-link"><a class="" href="./pricing">Pricing</a></div>
+          <div class="nav-link"><a class="" href="./about-us">About us</a></div>
           <button class="nav-btnDownl animate__animated" type="button">
-            <a>Download</a>
+            <a class="underline-blocked">Download</a><!--!Download file should be added-->
           </button>
         </div>
       </nav>
@@ -64,7 +68,8 @@
         <div class="title">
           <div class="welcome-title">
             <h1 class="animate__animated animate__slideInLeft unmargin">
-              <i class="fa-solid fa-shield fa-xs dark"></i> ahast - best cyber security
+              <i class="fa-solid fa-shield fa-xs dark"></i> ahast - best cyber
+              security
             </h1>
           </div>
           <div class="welcome-subtitle">
@@ -76,9 +81,13 @@
               only one using the revolutionary AI method
             </h2>
             <div class="buttonBar">
-              <button class="animate__animated bigButton" >
-                <a href="#products" >All Products</a></button
-              ><button class="bigButton secondary"><a>Download</a></button>
+              <button class="animate__animated bigButton">
+                <a class="underline-blocked" href="#products"
+                  >All Products</a
+                ></button
+              ><button class="bigButton secondary underline-blocked">
+                <a>Download</a><!--! Download file should be added-->
+              </button>
             </div>
           </div>
         </div>
@@ -142,15 +151,39 @@
           </svg>
         </div>
       </section>
+      <section id="statistic">
+        <h2 class="unmargin">The only independent leader in cybersecurity</h2>
+        <h3 class="unmargin">
+          The statistics for the last year speak for themselves.
+        </h3>
+        <div class="statistic-container">
+          <!--? Add real numbers? -->
+          <div>
+            <h3>687 milions</h3>
+            <p>cyber attacks stopped</p>
+          </div>
+          <div>
+            <h3>114 milions</h3>
+            <p>blocked malicious URLs</p>
+          </div>
+          <div>
+            <h3>64 milions</h3>
+            <p>of neutralized unique viruses</p>
+          </div>
+        </div>
+      </section>
       <section id="free-material">
         <div class="free-material-header">
-        <h2><i class="fa-solid fa-lock dark"></i> Free Course:</h2>
-        <h1>How to stay safe online </h1>
-        <p class="">Get our popular course for free right into your inbox, </p>
+          <h2><i class="fa-solid fa-lock dark"></i> Free Course:</h2>
+          <h1>How to stay safe online</h1>
         </div>
         <form>
-          <input type="email" placeholder="Your email" />
-          <button class="animate__animated animButton-Form">Get it now</button>
+          <!--TODO: Make form more beautifull (Maybe add image or blobs?)-->
+          <input type="email" placeholder="joe.caren@gmail.com" />
+          <input type="checkbox" />
+          <button type="submit" class="animate__animated animButton-Form">
+            Get it now
+          </button>
         </form>
       </section>
       <section id="products" class="products">
@@ -185,6 +218,7 @@
       >
     </footer>
     <!--Scripts-->
+    <!--TODO: Live chat with discord crate or find something else-->
     <script src="./js/javascript.js"></script>
     <script src="./js/flickity.pkgd.min.js"></script>
   </body>
