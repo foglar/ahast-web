@@ -9,8 +9,21 @@ footer {
 
   margin-top: 10px;
   margin-bottom: 0px;
+
+  display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-footer > span > * {
+footer > div > span > * {
   margin: 5px;
+}
+
+footer>div {
+  width: auto;
+
+  background-color: var(--primaryColor);
 }

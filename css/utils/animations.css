@@ -12,6 +12,6 @@
 }
 
 .animButton-Form:hover {
-    animation: wobble;
+    animation: tada;
     animation-duration: 1s;
 }

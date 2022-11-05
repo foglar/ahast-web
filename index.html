@@ -58,7 +58,8 @@
           <div class="nav-link"><a class="" href="./pricing">Pricing</a></div>
           <div class="nav-link"><a class="" href="./about-us">About us</a></div>
           <button class="nav-btnDownl animate__animated" type="button">
-            <a class="underline-blocked">Download</a><!--!Download file should be added-->
+            <a class="underline-blocked">Download</a
+            ><!--!Download file should be added-->
           </button>
         </div>
       </nav>
@@ -86,7 +87,8 @@
                   >All Products</a
                 ></button
               ><button class="bigButton secondary underline-blocked">
-                <a>Download</a><!--! Download file should be added-->
+                <a>Download</a
+                ><!--! Download file should be added-->
               </button>
             </div>
           </div>
@@ -213,12 +215,25 @@
       </section>
     </main>
     <footer>
-      <span class="copyright"
-        ><i class="fa-solid fa-copyright white"></i>2022 ahast - security</span
-      >
+      <div class="copyright">
+        <span class="copyright">
+          <i class="fa-solid fa-copyright white"></i>2022 ahast - security
+        </span>
+      </div>
+      <div class="social-links">
+        <span>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-discord"></i>
+        </span>
+      </div> 
     </footer>
     <!--Scripts-->
-    <!--TODO: Live chat with discord crate or find something else-->
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate({
+          server: '1035480842383933450', // ahast - Live Chat Support
+          channel: '1035480843285692500' // #support-main
+      })
+    </script>
     <script src="./js/javascript.js"></script>
     <script src="./js/flickity.pkgd.min.js"></script>
   </body>
