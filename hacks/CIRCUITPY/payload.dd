@@ -1,0 +1,13 @@
+REM Title: Bruteforcer
+REM Author:	foglar
+REM Description: Tries random times to hack a pc
+REM Target:	Linux
+REM Version:	1.0
+REM Category:	Prank
+REM Source: https://github.com/UberGuidoZ/OMG-Payloads
+REM
+CTRL
+DELAY 1000
+STRING PASSWORD
+ENTER
+DELAY 3000

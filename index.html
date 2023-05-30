@@ -1,4 +1,4 @@
-<!--!!!WARNING THIS ANTIVIRUS IS NOT REAL IT IS JUST SCHOOL PROJECT, AND HAVE NOTHING TO DO WITH AVAST-->
+<!--!!!WARNING THIS ANTIVIRUS IS NOT REAL, IT IS JUST SCHOOL PROJECT, AND HAVE NOTHING TO DO WITH AVAST-->
 <!DOCTYPE html>
 <html lang="en">
   <!--TODO: Backend for forms and buttons-->
@@ -165,11 +165,11 @@
             <p>cyber attacks stopped</p>
           </div>
           <div>
-            <h3>114 milions</h3>
+            <h3>420 milions</h3>
             <p>blocked malicious URLs</p>
           </div>
           <div>
-            <h3>64 milions</h3>
+            <h3>69 milions</h3>
             <p>of neutralized unique viruses</p>
           </div>
         </div>
@@ -179,39 +179,20 @@
           <h2><i class="fa-solid fa-lock dark"></i> Free Course:</h2>
           <h1>How to stay safe online</h1>
         </div>
-        <form>
+        <form method="post" target="/email-campaign.php" >
           <!--TODO: Make form more beautifull (Maybe add image or blobs?)-->
-          <input type="email" placeholder="joe.caren@gmail.com" />
-          <input type="checkbox" />
+          <section class="form-sec">
+            <input type="email" name="email" placeholder="joe.caren@gmail.com" required />
+            <br />
+            <input name="terms" type="checkbox" value="1" required/>
+            <label name="terms">I agree with terms of <a>usage</a></label
+            >
+          </section>
+          <!--LABELS-->
           <button type="submit" class="animate__animated animButton-Form">
             Get it now
           </button>
         </form>
-      </section>
-      <section id="products" class="products">
-        <h2 class="unmargin">Products</h2>
-        <div class="navCard">
-          <button class="btn-small">All</button
-          ><button class="btn-small">
-            <i class="fa-brands fa-windows"></i> Windows</button
-          ><button class="btn-small">
-            <i class="fa-brands fa-android"></i> Android</button
-          ><button class="btn-small">
-            <i class="fa-brands fa-apple"></i> Mac</button
-          ><button class="btn-small">
-            <i class="fa-brands fa-apple"></i> iPhone
-          </button>
-        </div>
-        <div
-          class="main-carousel"
-          data-flickity='{ "cellAlign": "center", "contain": true }'
-        >
-          <div class="carousel-cell"><h3>Total security</h3></div>
-          <div class="carousel-cell"><h3>Secure connection</h3></div>
-          <div class="carousel-cell"><h3>World web</h3></div>
-          <div class="carousel-cell"><h3>Safe kids</h3></div>
-          <div class="carousel-cell"><h3>Password manager</h3></div>
-        </div>
       </section>
     </main>
     <footer>
@@ -222,18 +203,19 @@
       </div>
       <div class="social-links">
         <span>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-discord"></i>
+          <a
+            class="icon-link"
+            href="https://www.instagram.com/ahast_security"
+            target="_blank"
+            ><i class="fa-brands fa-instagram icon-link"></i
+          ></a>
+          <a href="https://discord.gg/Nejc29HucZ" target="_blank"
+            ><i class="fa-brands fa-discord icon-link"></i
+          ></a>
         </span>
-      </div> 
+      </div>
     </footer>
     <!--Scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-      new Crate({
-          server: '1035480842383933450', // ahast - Live Chat Support
-          channel: '1035480843285692500' // #support-main
-      })
-    </script>
     <script src="./js/javascript.js"></script>
     <script src="./js/flickity.pkgd.min.js"></script>
   </body>

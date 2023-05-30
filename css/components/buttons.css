@@ -93,3 +93,13 @@ input[type="email"] {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
 }
+
+.form-sec {
+    width: 450px;
+    display: block;
+}
+
+label {
+    font-family: var(--fsecondaryHeader);
+    font-size: 0.8rem;
+}

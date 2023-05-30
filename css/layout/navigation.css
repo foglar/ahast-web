@@ -40,6 +40,10 @@ nav > * {
   margin-right: 10px;
 }
 
+.nav-logo {
+  margin-top: 0.4%;
+}
+
 .nav-link > a {
   color: var(--black);
   font-family: var(--fparagraph);
@@ -56,7 +60,7 @@ nav > * {
   vertical-align: middle;
   align-self: flex-end;
 
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid var(--primaryColor);
 }
 
 .nav-link:hover {
